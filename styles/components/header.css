@@ -1,0 +1,240 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--black-);
+}
+
+.logo{
+    height: 5.5vh;
+}
+
+.logo img{
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    border-radius: 2rem;
+    mix-blend-mode: darken;
+}
+
+
+.hambuger {
+    cursor: pointer;
+    display: block;
+    z-index: 999;
+    position: fixed;
+    margin-left: -1.5rem;
+    margin-top: -.5rem;
+    top: 2rem;
+}
+
+.bar {
+    display: block;
+    width: 1.6rem;
+    height: .2rem;
+    margin: .2rem auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #000;
+    border-radius: 4rem;
+}
+
+.hambuger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hambuger.active .bar:nth-child(1) {
+    transform: translateY(.2rem) rotate(45deg);
+}
+
+.hambuger.active .bar:nth-child(3) {
+    transform: translateY(-2vw) rotate(-45deg);
+}
+
+.header__menu {
+    position: fixed;
+    left: -100%;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    flex-direction: column;
+    width: 100vw;
+    height: 35vh;
+    text-align: center;
+    transition: .3s;
+    list-style: none;
+    padding-top: 2rem;
+    z-index: 998;
+    background: rgba(184, 182, 182, 0.8);
+}
+
+.header__menu a {
+    font-size: 1rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+    font-family: var(--font-family-);
+    font-weight: 600;
+}
+
+.header__menu.active {
+    left: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.btn button {
+    width: 5.8rem;
+    height: 1.8rem;
+    font-size: .8rem;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    color: #fff;
+    background: #00BFFF;
+}
+
+.btn input {
+    position: relative;
+    width: 8rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    background: red;
+    display: none;
+}
+
+.btn input::placeholder {
+    font-size: .6rem;
+    padding-left: 2rem;
+}
+
+.btn i:nth-child(2) {
+    margin-right: 1rem;
+    margin-top: .1rem;
+    z-index: 1;
+}
+
+
+
+/* @media (min-width:475px) {} */
+
+/* sm */
+/* @media (min-width:640px) {} */
+
+/* md */
+@media (min-width:768px) {
+    .hambuger {
+        display: none;
+    }
+    .logo{
+        height: 7vh;
+    }
+    .logo img{
+        width: 7rem;
+    }
+
+    .header__menu {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        left: 0;
+        top: 0;
+        gap: 1rem;
+        position: relative;
+        width: max-content;
+        height: max-content;
+    }
+
+    .header__link {
+        font-size: .8rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--black-);
+        font-family: var(--font-family-);
+    }
+
+    .header__menu a {
+        font-size: .9rem;
+    }
+
+    .btn {
+        display: block;
+    }
+    .btn input {
+        width: 9rem;
+        height: 1.5rem;
+        border-radius: 1rem;
+        border: 1px solid #000;
+    }
+    
+    .btn input::placeholder {
+        font-size: .6rem;
+        padding-left: 2rem;
+    }
+    
+    .btn i:nth-child(2) {
+        margin-left: .7rem;
+        margin-top: .01rem;
+    }
+}
+
+/* lg */
+@media (min-width:1024px) {
+    .logo{
+        height: 7vh;
+    }
+    .logo img{
+        width: 9rem;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* xl */
+@media (min-width:1280px) {
+    .logo{
+        height: 7vh;
+    }
+    .logo img{
+        width: 6rem;
+    }
+    .header {
+        gap: 20rem;
+    }
+}
+
+/* 2xl */
+@media (min-width:1536px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        gap: 55rem;
+        padding-bottom: 2rem;
+    }
+    .logo{
+        height: 7vh;
+    }
+    .logo img{
+        top: -2rem;
+        width: 11rem;
+    }
+    .header__menu{
+        margin-top: 2rem;
+    }
+}

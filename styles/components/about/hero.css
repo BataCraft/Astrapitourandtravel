@@ -1,0 +1,150 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_image {
+    max-width: 20rem;
+    height: max-content;
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.hero_image img {
+    width: 11rem;
+    height: 13rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px;
+
+    &:nth-child(2) {
+        position: absolute;
+        top: 5.5rem;
+        left: 4.5rem;
+    }
+}
+
+
+.hero_text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero_text h2 {
+    font-size: 2rem;
+}
+
+.introduction,
+.who_we_are p {
+    font-size: .8rem;
+}
+
+/* @media (min-width:475px) {} */
+
+/* sm */
+/* @media (min-width:640px) {} */
+
+/* md */
+@media (min-width:768px) {
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero_text {
+        gap: 1rem;
+    }
+
+    .hero_image img {
+        width: 13rem;
+        height: 15rem;
+        margin-left: 0rem;
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 6rem;
+            left: 8rem;
+        }
+    }
+}
+
+/* lg */
+@media (min-width:1024px) {
+    .hero {
+        justify-content: space-around;
+    }
+
+    .hero_image img {
+        width: 15rem;
+        height: 18rem;
+        margin-left: 0rem;
+
+        &:nth-child(2) {
+            position: absolute;
+            left: 13rem;
+        }
+    }
+}
+
+/* xl */
+@media (min-width:1280px) {
+    .hero {
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    .hero_image img {
+        width: 15rem;
+        height: 18rem;
+        margin-left: 0rem;
+
+        &:nth-child(2) {
+            position: absolute;
+            top: 7rem;
+            left: 23rem;
+        }
+    }
+
+    .hero_text h2 {
+        font-size: 2.5rem;
+    }
+
+    .introduction h3,
+    .who_we_are h3 {
+        font-size: 1.3rem;
+    }
+
+    .introduction p,
+    .who_we_are p {
+        font-size: 1.1rem;
+        width: 30rem;
+    }
+}
+
+/* 2xl */
+@media (min-width:1536px) {
+    .hero {
+        justify-content: space-evenly;
+        margin-top: 6rem;
+        padding-bottom: 2rem;
+    }
+    .hero_image img {
+        width: 17rem;
+        height: 20rem;
+        margin-left: 0rem;
+
+        &:nth-child(2) {
+            top: 12rem;
+            left: 33rem;
+        }
+    }
+
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./styles/components/photos/logo-removebg-preview.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Tour and Travel</title>
+</head>
+
+<body>
+
+  <!-- <div class="pre_load">
+    <div class="base">
+      <img src="./styles/components/photos/Animation - 1702881788894 (1).gif">
+    </div>
+    <div class="longfazers">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="pre-loading">
+        <div class="loading-container" id="loadingContainer">
+          <div class="loading-number" id="loadingNumber">0%</div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+  <header class="header container">
+    <div class="logo">
+      <img src="./styles/components/photos/logo-removebg-preview.png" alt="">
+    </div>
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a class="header__link" href="#" class="nav-link">Packages <i class="ri-arrow-down-s-line"></i></a>
+        </li>
+        <li>
+          <a class="header__link" href="#" class="nav-link">Destinations</a>
+        </li>
+        <li>
+          <a class="header__link" href="./about.html" class="nav-link">About Us</a>
+        </li>
+        <li>
+        </li>
+        <div class="btn">
+          <button class="login"><i class="ri-phone-line"></i> Contact Us</button>
+          <i class="ri-search-line onclick"></i><input type="text" placeholder="search your destinations" class="input">
+        </div>
+      </ul>
+      <div class="hambuger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero__txt">
+        <h2>Explore New Destinations with us!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, dolorum.
+        </p>
+        <div class="hero__btn">
+          <button>Explore</button>
+          <button>Lean More</button>
+        </div>
+      </div>
+      <!-- for smaller devices -->
+      <div class="hero__imgs">
+        <div class="imgs">
+          <span> <img
+              src="https://s3-alpha-sig.figma.com/img/fa7f/35b2/619fe5050e09d9d99c23a908a7479817?Expires=1702857600&Signature=GwUadih0mDLNglUNret9Vjr1EEkVQTjEX06JGD-r7nmZCQ8oS7V2w9qHcNhan0INOeRXP0PJI1pXk2LIHHoRicInJ6HnwmOGJsoUtBILVKL0a2oira2nd6sTk3x5UY7kyzhbysLosm4XWp5pvH7xV~HffnBoGGIUbNUcoJ9YHEPVrqOZVhetcQVMY1grYGXbhYQI63kChM1DymCnzTNc8dfCOaSY2xMv2Kwvad66t52CPntZjhFF~YoRsE9WNFBIoA9L3liIKRQ2G97MtR0WPzQ3wCCIn14c9ZXbPpJ051pAZRAsnUirLizJBrBPKnW~cI80TJabkBWiTvpMg2EiVQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/0302/94ac/6baf6ea44d850b339c9b575d03d03b53?Expires=1702857600&Signature=H8ztj1gdLJZJgzPzKo2YU0MRydz~F8K2X6FkpZGlzh-0oIGhE2OPsABJCw~X9Eb2f441lIn4yTjEAMbpABQ3SZFyC6r6EZ3cTn493uNNRNlFqsJV9sWxvqEPMaCnmJJXFYSRWxyYLdUB6XHPSNkgRC5X1X6hOKZ9b~P3fQgOk7GBiskEcW-4y42oHC4FiM7nuZaus6n90Sy~qws9t3S1jNSDC740DbacUfM2xDzqeUNUG9J4M2SIzmI0AcMCD8C3XCV~WnnsDilONhSldr9KDBFRJO1oMAcewiWm-UkhP0wipsHzkgZEdjviEcr~CBW1iENJ8pmi8gSrn75AyhYdZw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/e8d7/dd7f/3ae15a1192c276293da3e2a0987b3237?Expires=1702857600&Signature=P~WyO6WhbUSYWyiPZbtH45XUPWeE8XwcVsTbZ-yvTG20mTaisWV8Ye6hyd49psf5OQS8xErmgsQ356CtPdRhw8b0WgBX1FJ9OfKq1-HritZnX3Hiu1KJGf3Pv91QXEugt8nfTUu3JQlmjQw4X~00DefZ4dRrFVkqjrUZtu9XeashRpx6kFYeOW5TFEaCrnJCCEI6CP2i-7J1KKaK9b6axmrXiMkSqmm1Xinpo2bdZX2uZs0Sg2a1z8JSBPjoO-3BAtOH3EJSh8MYx9tYmlnrAxWJA6yqLQzfkKYVewYaX62NaOEIz7qLo1b1s2khUP0~QHEzwoF-kr65eEf2MidNBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+        </div>
+        <div class="imgs">
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/ce94/d1c3/3ada0465eb2695036cb54a22f9fbc71e?Expires=1702857600&Signature=VHB7jKw3pRFc3PzuwffetMvrK7H2aS6yDEmi-DC0sYeT1r1VqjZa0SQGKeMY2q8fSyED5X~ml3vUM7HFv9fRY3OD7o2U1XSjfwavySu9vaEYvIjUO0UA013iZAP7tTAhbLe7jCdaSVsyjYbu95QoFFzYEQ2opPjLXaKPnq7S-ZI~~Wsg2l5DiTLbeJ1bxka3nyrX2XFEJbFoBcwV90MHe0KKRz3xadVt-lxJ4hZCM2YtNPRhGDXwg0uICrbmgLaX-wNIBcI-jLXdkCPt6W~BYvdG8e9FACfisr3EHahAzIAMVZL6U4rQ6~a8vPKhtPU9aHWDuA6iDAuqYOAuQbYF4w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3421/324d/c1248c90e73248730cffc6470119d3d7?Expires=1702857600&Signature=hXO5AZm~J5s08U3VGc2~1eLe0ZDDSBeWxxWrtOedsR978b-S6RmZtX6q-GpbE33HMoRQPsSEo5ddMk4TpUrA~TwJv~kfz0k9HAzs6jfLf2EFjDQVC4sI-1RF1kaIe3IYwrwwuZN1sYFSOYFHBi-Rxyc2MZNWD1nHknCK7HlPkEUjzJiUwJeD6GflZ5C6~S6bC5-ExjhwGWB3mtloQaIOHTNoezz~iM11ULLI6GYM8-Z5fG-0Ff4gIpjSzq4ZwrtGZCvGgNS7GoyOQM0ITIviWocwR7NXtUJ4GqK3Z8A5fCv9qJcUomx91bPnjHi6SZ5yngvYZOMR-CttDEOtbs1suw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img src="https://th.bing.com/th/id/OIP.utj7BwxsDmAkAUcRVuQmHwHaE7?rs=1&pid=ImgDetMain" alt="">
+          </span>
+        </div>
+      </div>
+      <!-- for large devices -->
+      <div class="imgs__lg">
+        <div class="f__col">
+          <span> <img
+              src="https://s3-alpha-sig.figma.com/img/fa7f/35b2/619fe5050e09d9d99c23a908a7479817?Expires=1702857600&Signature=GwUadih0mDLNglUNret9Vjr1EEkVQTjEX06JGD-r7nmZCQ8oS7V2w9qHcNhan0INOeRXP0PJI1pXk2LIHHoRicInJ6HnwmOGJsoUtBILVKL0a2oira2nd6sTk3x5UY7kyzhbysLosm4XWp5pvH7xV~HffnBoGGIUbNUcoJ9YHEPVrqOZVhetcQVMY1grYGXbhYQI63kChM1DymCnzTNc8dfCOaSY2xMv2Kwvad66t52CPntZjhFF~YoRsE9WNFBIoA9L3liIKRQ2G97MtR0WPzQ3wCCIn14c9ZXbPpJ051pAZRAsnUirLizJBrBPKnW~cI80TJabkBWiTvpMg2EiVQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/0302/94ac/6baf6ea44d850b339c9b575d03d03b53?Expires=1702857600&Signature=H8ztj1gdLJZJgzPzKo2YU0MRydz~F8K2X6FkpZGlzh-0oIGhE2OPsABJCw~X9Eb2f441lIn4yTjEAMbpABQ3SZFyC6r6EZ3cTn493uNNRNlFqsJV9sWxvqEPMaCnmJJXFYSRWxyYLdUB6XHPSNkgRC5X1X6hOKZ9b~P3fQgOk7GBiskEcW-4y42oHC4FiM7nuZaus6n90Sy~qws9t3S1jNSDC740DbacUfM2xDzqeUNUG9J4M2SIzmI0AcMCD8C3XCV~WnnsDilONhSldr9KDBFRJO1oMAcewiWm-UkhP0wipsHzkgZEdjviEcr~CBW1iENJ8pmi8gSrn75AyhYdZw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/e8d7/dd7f/3ae15a1192c276293da3e2a0987b3237?Expires=1702857600&Signature=P~WyO6WhbUSYWyiPZbtH45XUPWeE8XwcVsTbZ-yvTG20mTaisWV8Ye6hyd49psf5OQS8xErmgsQ356CtPdRhw8b0WgBX1FJ9OfKq1-HritZnX3Hiu1KJGf3Pv91QXEugt8nfTUu3JQlmjQw4X~00DefZ4dRrFVkqjrUZtu9XeashRpx6kFYeOW5TFEaCrnJCCEI6CP2i-7J1KKaK9b6axmrXiMkSqmm1Xinpo2bdZX2uZs0Sg2a1z8JSBPjoO-3BAtOH3EJSh8MYx9tYmlnrAxWJA6yqLQzfkKYVewYaX62NaOEIz7qLo1b1s2khUP0~QHEzwoF-kr65eEf2MidNBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+        </div>
+        <div class="s__col">
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/ce94/d1c3/3ada0465eb2695036cb54a22f9fbc71e?Expires=1702857600&Signature=VHB7jKw3pRFc3PzuwffetMvrK7H2aS6yDEmi-DC0sYeT1r1VqjZa0SQGKeMY2q8fSyED5X~ml3vUM7HFv9fRY3OD7o2U1XSjfwavySu9vaEYvIjUO0UA013iZAP7tTAhbLe7jCdaSVsyjYbu95QoFFzYEQ2opPjLXaKPnq7S-ZI~~Wsg2l5DiTLbeJ1bxka3nyrX2XFEJbFoBcwV90MHe0KKRz3xadVt-lxJ4hZCM2YtNPRhGDXwg0uICrbmgLaX-wNIBcI-jLXdkCPt6W~BYvdG8e9FACfisr3EHahAzIAMVZL6U4rQ6~a8vPKhtPU9aHWDuA6iDAuqYOAuQbYF4w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3421/324d/c1248c90e73248730cffc6470119d3d7?Expires=1702857600&Signature=hXO5AZm~J5s08U3VGc2~1eLe0ZDDSBeWxxWrtOedsR978b-S6RmZtX6q-GpbE33HMoRQPsSEo5ddMk4TpUrA~TwJv~kfz0k9HAzs6jfLf2EFjDQVC4sI-1RF1kaIe3IYwrwwuZN1sYFSOYFHBi-Rxyc2MZNWD1nHknCK7HlPkEUjzJiUwJeD6GflZ5C6~S6bC5-ExjhwGWB3mtloQaIOHTNoezz~iM11ULLI6GYM8-Z5fG-0Ff4gIpjSzq4ZwrtGZCvGgNS7GoyOQM0ITIviWocwR7NXtUJ4GqK3Z8A5fCv9qJcUomx91bPnjHi6SZ5yngvYZOMR-CttDEOtbs1suw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt="">
+          </span>
+          <span>
+            <img src="https://th.bing.com/th/id/OIP.utj7BwxsDmAkAUcRVuQmHwHaE7?rs=1&pid=ImgDetMain" alt="">
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover container">
+      <div class="dis__txt">
+        <h2>Discover the touch of <span>Nature</span></h2>
+      </div>
+      <div class="dis__imgs">
+        <img src="./styles/components/photos/adventure.png" alt="">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/9284/2404/69dfe73855e357ed853d6ae9905a74f6?Expires=1702857600&Signature=Y5BN9X5rzhTwwOVoERwabX5oF7bKsQ5cFLU-S5PgYA07kTBnNPH2Epi8JNPSD7EvZFckUfEXbkf74moYThhBqgps51QwM8bfDwVpOmhSJYeA1BPbZ3o05YViIVsgYOQFvxu5egyqeWPtxnEO6XWQA-jGyFmqtso9qu8e4ds1uXVL4V2uLmpTyT9AOPqfWltky6drXWVh9EHjMCnpfoZVbFTnOd8BeueOoS~fhv-yRr6B227REQAZ-I6ZGy0IevrEQk-86D3rKYH-8DSf44TWyE-NGMEug87oRIxyaud9bRRk~SfxCLyMWeE74IYEzFCdOdxonUJxwjvigzQSLrbaTw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="">
+        <img src="./styles/components/photos/Nepal Classic Tours.png" alt="">
+      </div>
+    </section>
+
+    <section class="review container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="customer_detail">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/04cd/591e/05691e25a8184b7a5656f2b7309005c2?Expires=1703462400&Signature=SHsV47rbALWG6Sze~HaSNG3422bg0mi25XdjNEEOqdFIy-kTDjSR~sBzOwXV6~IrMHIJQGqhnu3nd5DPb3ZaCxz3~Wa1jbm7qHOrVPawiGDVpiRdE4xvnKCpdCQcAkSaljQftvvtfgGaukTH~6NKpGce7bN6Y9yhSV9cNwzte~aTZcgNKjXNoNKsAy1g7QAAsqAqceqxYYLSc5BdepXeIEhrKEUmv-tRgUCrA0gCptH9dtxScMwu9vra1ReVXlP908F7k0OVkPOHJIEqeoNsGwhh-o8TNtzaoep-tLvNqZFQTzpeIom1TFjt~e-SwSgSrwUHcbvEhncq8rJ0NDNHNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt="">
+              <p>“Of resolve to gravity thought my prepare chamber so. Unsatiable entreaties
+                collecting may sympathize nay interested instrument. If continue building numerous
+                of at relation in margaret. Lasted engage roused mother an am at. Other early
+                while if by do to. Missed living excuse as be. Cause heard fat above first shall for.
+                My smiling to he removal weather on anxious.”</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="customer_detail">
+              <img
+                src="https://img.freepik.com/free-photo/person-enjoying-warm-nostalgic-sunset_52683-100695.jpg?w=1380&t=st=1702448666~exp=1702449266~hmac=bcf39957a7361412f92d246325096980c717ca7c82d3692de68b2616407f59fd"
+                alt="">
+              <p>“Of resolve to gravity thought my prepare chamber so. Unsatiable entreaties
+                collecting may sympathize nay interested instrument. If continue building numerous
+                of at relation in margaret. Lasted engage roused mother an am at. Other early
+                while if by do to. Missed living excuse as be. Cause heard fat above first shall for.
+                My smiling to he removal weather on anxious.”</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="customer_detail">
+              <img
+                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1702448788~exp=1702449388~hmac=b779b321acd6fe75d3c214ed3a4dd09342fe6f0a52eb8aca3ff0d0c104349a95"
+                alt="">
+              <p>“Of resolve to gravity thought my prepare chamber so. Unsatiable entreaties
+                collecting may sympathize nay interested instrument. If continue building numerous
+                of at relation in margaret. Lasted engage roused mother an am at. Other early
+                while if by do to. Missed living excuse as be. Cause heard fat above first shall for.
+                My smiling to he removal weather on anxious.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer_logo">
+      <img src="./styles/components/photos/logo-removebg-preview.png" alt="">
+    </div>
+    <div class="all_txt">
+      <div class="footer_txt">
+        <div class="det">
+          <div class="title">
+            <h3>About Us</h3>
+          </div>
+          <div class="txt">
+            <ul>
+              <li>Explore</li>
+              <li>Destinations</li>
+              <li>Pacakages</li>
+              <li>Contact</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="det">
+          <div class="title">
+            <h3>Follow Us</h3>
+          </div>
+          <div class="txt">
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Printrest</li>
+              <li>Linkedin</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="det">
+          <div class="title">
+            <h3>Useful Links</h3>
+          </div>
+          <div class="txt">
+            <ul>
+              <li>FAQs</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>Sitmap</li>
+              <li>Subscribe</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer_email">
+        <div class="e_title">
+          <h4>Join our mailing list</h4>
+          <h5>Enter Email address</h5>
+          <div class="inp">
+            <input type="email" name="" id="" placeholder="Submit">
+            <button>Subscribe</button>
+          </div>
+          <p>
+            By subscribing, you agree to our Privacy Policy and consent to receive <br>
+            updates from our company
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="copy_right">
+        <h3>&copy; 2023 Company Name. All right reserved.</h3>
+        <ul>
+          <li><u>Privacy Policy</u></li>
+          <li><u>Terms of Services</u></li>
+          <li><u>Cookie Setting</u></li>
+        </ul>
+      </div>
+      <div class="social_media_link">
+        <i class="ri-facebook-circle-fill"></i>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-twitter-x-line"></i>
+        <i class="ri-linkedin-box-fill"></i>
+        <i class="ri-youtube-fill"></i>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+    integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+    integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

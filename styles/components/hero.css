@@ -1,0 +1,251 @@
+.hero__txt {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero__txt h2 {
+    font-size: 1.4rem;
+}
+
+.hero__txt p {
+    font-family: var(--font-family-);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.hero__btn {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-family-);
+}
+
+.hero__btn button {
+    font-weight: 700;
+    font-size: .8rem;
+    background: none;
+    border: 1px solid #000;
+    height: 1.4rem;
+
+    &:nth-child(1) {
+        width: 4rem;
+        background: #00BFFF;
+        color: #fff;
+    }
+
+    &:nth-child(2) {
+        width: 5rem;
+    }
+}
+
+.hero__imgs {
+    display: none;
+}
+
+.imgs__lg{
+    display: none;
+}
+
+@media (min-width:475px) {
+    
+}
+
+/* sm */
+/* @media (min-width:640px) {} */
+
+/* md */
+@media (min-width:768px) {
+    .hero {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: max-content;
+    }
+
+    .hero__txt {
+        align-items: start;
+        width: 20rem;
+    }
+
+    .hero__imgs {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        height: 50vh;
+        overflow-y: scroll;
+        gap: 1rem;
+        border-radius: 5rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    }
+
+    .hero__imgs .imgs {
+        width: 16rem;
+        justify-content: center;
+        height: max-content;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-gap: 1rem;
+        flex: none;
+    }
+
+    .hero__imgs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .imgs img {
+        width: 15rem;
+        border-radius: 5rem;
+    }
+
+}
+
+/* lg */
+@media (min-width:1024px) {
+    .hero__imgs {
+        display: none;
+    }
+
+    .hero {
+        height: 80vh;
+        justify-content: space-around;
+    }
+
+    .hero__txt {
+        width: 35rem;
+    }
+
+    .hero__txt h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero__txt p {
+        font-size: 1rem;
+    }
+
+    .hero__btn button {
+        font-size: 1rem;
+        height: 2rem;
+
+        &:nth-child(1) {
+            width: 5rem;
+        }
+
+        &:nth-child(2) {
+            width: 6.5rem;
+        }
+    }
+
+    .imgs__lg {
+        width: 25rem;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .f__col {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .s__col {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .imgs__lg span img {
+        width: 10rem;
+    }
+}
+
+/* xl */
+@media (min-width:1280px) {
+    .imgs__lg {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imgs__lg span img {
+        width: 10rem;
+    }
+}
+
+/* 2xl */
+@media (min-width:1536px) {
+    .hero {
+        height: 80vh;
+        justify-content: space-evenly;
+    }
+
+    .hero__txt {
+        width: 40rem;
+    }
+
+    .hero__txt h2 {
+        font-size: 4rem;
+    }
+
+    .hero__txt p {
+        font-size: 1.4rem;
+    }
+
+    .hero__btn button {
+        font-size: 1rem;
+        height: 2rem;
+
+        &:nth-child(1) {
+            width: 5rem;
+        }
+
+        &:nth-child(2) {
+            width: 6.5rem;
+        }
+    }
+
+    .imgs__lg {
+        width: 33rem;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .f__col {
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .s__col {
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .imgs__lg span img {
+        width: 12rem;
+    }
+
+    .imgs__lg span img {
+        width: 13rem;
+    }
+}
